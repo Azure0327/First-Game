@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url('https://th.bing.com/th/id/R.7d028327f4a02d31bd11a59a23aeb520?rik=LdK%2bHWFhIyux3Q&riu=http%3a%2f%2fstatic5.depositphotos.com%2f1029473%2f530%2fi%2f950%2fdepositphotos_5303357-stock-photo-binary-code.jpg&ehk=YzKp2lnYxDbhcdhQ7SUAh7kpsSbm5QnYIWE0ZHzAdP4%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {background-position: 0 0;}
+  50% {background-position: 0 0px;}
+  100% {background-position: 0 0;}
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#game {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  text-align: center;
+}
+
+p {
+  margin: 1em 0;
+  font-size: 1.2em;
+  color: black;
+}
+
+input[type="number"] {
+  padding: 0.5em;
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#result {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#timer {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#highScoreNumber {
+  font-weight: bold;
+}
+
+#difficulty {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  input[type="number"] {
+    max-width: 150px;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 0.3em 0.7em;
+  }
+  
+  #result {
+    font-size: 1.2em;
+  }
+  
+  #timer {
+    font-size: 1em;
+  }
+  
+  #highScoreNumber {
+    font-size: 1.2em;
+  }
+  
+  #difficulty
+{
+font-size: 1em;
+}
+
+#difficulty {
+font-size: 1.2em;
+}
+}

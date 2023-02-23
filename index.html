@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div id="container">
+    <h1>Guessing Game</h1>
+    <div id="game">
+      <p>Guess a number between 1 and <span id="maxNumber"></span>:</p>
+      <input type="number" id="guessInput">
+      <button onclick="checkGuess()">Guess</button>
+      <button onclick="startGame()">New Game</button>
+      <p id="result"></p>
+      <p id="timer">Time: 0s</p>
+      <p>High score: <span id="highScoreNumber"></span>s</p>
+      <p>Difficulty: <span id="difficulty"></span></p>
+      <button onclick="toggleDifficulty()">Toggle Difficulty</button>
+    </div>
+  </div>
+</body>
+</html>
